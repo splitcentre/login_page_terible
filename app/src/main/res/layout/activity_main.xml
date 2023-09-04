@@ -7,6 +7,7 @@
     android:background="@color/background"
     tools:context=".MainActivity">
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/loginCardView"
         android:layout_width="match_parent"
@@ -30,13 +31,6 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/baseline_person_outline_24" />
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="16dp"
-                android:background="@color/box"
-                app:cardCornerRadius="16dp">
 
             <EditText
                 android:id="@+id/usernameEditText"
