@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
+    android:background="@drawable/pinkback"
     tools:context=".MainActivity">
 
 
@@ -31,7 +31,11 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="8dp"
                 android:src="@drawable/baseline_person_outline_24" />
-
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:layout_below="@id/logoImageView"/>
             <EditText
                 android:id="@+id/usernameEditText"
                 android:layout_width="346dp"
@@ -61,8 +65,6 @@
                     android:padding="12dp" />
             </androidx.cardview.widget.CardView>
 
-
-            <!-- Forgot Password TextView -->
             <TextView
                 android:id="@+id/forgotPasswordTextView"
                 android:layout_width="wrap_content"
@@ -73,13 +75,14 @@
                 android:layout_below="@id/passwordEditText"
                 android:layout_marginTop="8dp" />
 
-            <!-- Login Button -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/forgotPasswordTextView"
-                android:layout_margin="16dp"
-                android:background="@color/black"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
                 app:cardCornerRadius="16dp">
 
                 <Button
@@ -90,9 +93,26 @@
                     android:background="@color/black"
                     android:textColor="@android:color/white"
                     android:padding="12dp" />
-            </androidx.cardview.widget.CardView>
+         </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 
     </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/createAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not have an account? "
+        android:layout_below="@+id/loginCardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:id="@+id/NewAccountTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create new account"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_below="@+id/createAccountTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
 </RelativeLayout>
